@@ -578,8 +578,8 @@ body {
     height: 10px;
 
     position: absolute;
-    left: 5px;
-    top: 5px;
+    left: 4px;
+    top: 4px;
 }
 
 .form_button-apply.active:before {
