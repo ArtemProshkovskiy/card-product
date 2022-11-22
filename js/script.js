@@ -111,3 +111,18 @@ swiperElements.forEach(slider => {
         },
     });
 })
+
+const swiperCard = new Swiper('.swiper-slider_card', {
+  navigation: {
+    nextEl: '.swiper-button-next_card',
+    prevEl: '.swiper-button-prev_card',
+  },
+    slidesPerView: 1,
+    thumbs: {
+      swiper: {
+          el: '.swiper-virtual-slider_card',
+          slidesPerView: 4,
+      }
+    },
+
+});

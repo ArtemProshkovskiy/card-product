@@ -461,7 +461,7 @@ body {
 
 .form_input input {
     padding-left: 20px;
-    width: 230px;
+    width: 250px;
     height: 50px;
     border: none;
 
@@ -965,9 +965,73 @@ body {
 }
 
 .card-content__product__swiper {
-    background: #909397;
     height: 420px;
     width: 420px;
+}
+
+.swiper-slider_card .swiper-button-prev_card, .swiper-slider_card .swiper-button-next_card {
+    background: #e7e1e0;
+    width: 50px;
+    height: 50px;
+    display: block;
+    opacity: 1;
+}
+.swiper-button-prev_card {
+    left: 20px !important;
+}
+.swiper-button-next_card {
+    right: 20px !important;
+}
+
+.swiper-slider_card .swiper-button-prev_card:after, .swiper-slider_card .swiper-button-next_card:after {
+    content: '';
+    background: url("../img/same_product/arrow_slider.png");
+    width: 32px;
+    height: 32px;
+    display: block;
+    opacity: 1;
+    position: absolute;
+}
+
+.swiper-slider_card .swiper-button-prev_card:after {
+    transform: rotate(180deg);
+    left: 8px;
+    top: 5px;
+}
+
+.swiper-slider_card .swiper-button-next_card:after {
+    right: 8px;
+    top: 12px;
+}
+
+.swiper-virtualslide_card {
+    position: relative;
+    margin-bottom: 10px;
+
+    width: 107px !important;
+}
+.swiper-slide_vir
+
+.active-slide_photo {
+    width: 24px;
+    height: 24px;
+}
+
+.active-slide_img {
+    position: absolute;
+    top: 15px;
+    left: 35px;
+    display: none;
+}
+
+.swiper-slide-thumb-active .active-slide_img {
+    display: block;
+}
+
+.slider_img {
+    width: 98px;
+    height: 60px;
+    border-radius: 5px;
 }
 
 .card-content__product {
@@ -1276,6 +1340,9 @@ body {
     flex-direction: row;
     justify-content: center;
 }
+.same-product__content {
+    position: relative;
+}
 
 .same-product__content-img {
     background: white;
@@ -1299,6 +1366,7 @@ body {
     margin-bottom: 40px;
     margin-top: 80px;
 }
+
 .same-product__content-img {
     position: relative;
 }
@@ -1541,9 +1609,11 @@ body {
 
     color: #53C5E2;
 }
-.same-product.showed{
+
+.same-product.showed {
     margin-bottom: 90px;
 }
+
 .same-product__content-more a:hover {
     text-decoration: underline;
 }
@@ -1573,6 +1643,7 @@ body {
     height: 50px !important;
 }
 
+S
 .same-product__content {
     position: relative;
 }
@@ -1912,7 +1983,7 @@ body {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 32px;
+    line-height: 31px;
     /* or 229% */
 
     display: flex;
